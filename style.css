@@ -50,11 +50,10 @@ nav, .nav-links {
     li:hover > ul {
         display: block;
         position: absolute;
+        text-align: center;
         font-size: 1.2rem;
-        margin: 0.3rem 0;
-        li > a {
-            text-decoration: none:
-        }
+        margin: 0.6rem 0;
+        text-decoration: none;
     } 
 }
 
@@ -69,7 +68,7 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
-}
+} 
 
 .title {
     font-size: 2rem;

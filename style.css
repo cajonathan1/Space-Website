@@ -1,0 +1,80 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", system-ui;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+
+nav, .nav-links {
+    display: flex;
+}
+
+ nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    li > ul {
+        display: none;
+        list-style-type: none;
+    }
+    li:hover > ul {
+        display: block;
+        position: absolute;
+        font-size: 1.2rem;
+        margin: 0.3rem 0;
+        li > a {
+            text-decoration: none:
+        }
+    } 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.title:hover {
+    cursor: default;
+} 

@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanetPath</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <script src="script.js"></script>
-    <nav id="desktop-nav"> 
-        <div class="title">Space Website</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#planets" >Planets</a> <!-- Make this a dropdown menu that links to the pages of each planet -->
-                    <ul>
-                        <li><a href="#planet-merucry">Mercury</a></li>
-                        <li><a href="#planet-venus">Venus</a></li>
-                        <li><a href="#planet-earth">Earth</a></li>
-                        <li><a href="#planet-mars">Mars</a></li>
-                        <li><a href="#planet-jupiter">Jupiter</a></li>
-                        <li><a href="#planet-saturn">Saturn</a></li>
-                        <li><a href="#planet-uranus">Uranus</a></li>
-                        <li><a href="#planet-neptune">Neptune</a></li>
-                    </ul>
-                </li> 
+    <nav id="desktop-nav">
+      <div class="title">Space Website</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li>
+            <a href="#planets">Planets</a>
+            <!-- Make this a dropdown menu that links to the pages of each planet -->
+            <ul>
+              <li><a href="#planet-merucry">Mercury</a></li>
+              <li><a href="#planet-venus">Venus</a></li>
+              <li><a href="#planet-earth">Earth</a></li>
+              <li><a href="#planet-mars">Mars</a></li>
+              <li><a href="#planet-jupiter">Jupiter</a></li>
+              <li><a href="#planet-saturn">Saturn</a></li>
+              <li><a href="#planet-uranus">Uranus</a></li>
+              <li><a href="#planet-neptune">Neptune</a></li>
             </ul>
-        </div>
-    </nav> 
+          </li>
+        </ul>
+      </div>
+    </nav>
     <nav id="hamburger-nav">
-        <div class="title">Space Website</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-             
-                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#planets" onclick="toggleMenu()">Planets</a> <!-- Make this a dropdown menu that links to the pages of each planet -->
-                    <ul> 
-                        <li><a href="#planet-merucry" onclick="toggleMenu()">Mercury</a></li>
-                        <li><a href="#planet-venus" onclick="toggleMenu()">Venus</a></li>
-                        <li><a href="#planet-earth" onclick="toggleMenu()">Earth</a></li>
-                        <li><a href="#planet-mars" onclick="toggleMenu()">Mars</a></li>
-                        <li><a href="#planet-jupiter" onclick="toggleMenu()">Jupiter</a></li>
-                        <li><a href="#planet-saturn" onclick="toggleMenu()">Saturn</a></li>
-                        <li><a href="#planet-uranus" onclick="toggleMenu()">Uranus</a></li>
-                        <li><a href="#planet-neptune" onclick="toggleMenu()">Neptune</a></li>
-                    </ul>
-                </li> 
-            </ul>
+      <div class="title">Space Website</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
+        <ul class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#planets" onclick="toggleMenu()">Planets</a>
+            <!-- Make this a dropdown menu that links to the pages of each planet -->
+            <ul>
+              <li>
+                <a href="#planet-merucry" onclick="toggleMenu()">Mercury</a>
+              </li>
+              <li><a href="#planet-venus" onclick="toggleMenu()">Venus</a></li>
+              <li><a href="#planet-earth" onclick="toggleMenu()">Earth</a></li>
+              <li><a href="#planet-mars" onclick="toggleMenu()">Mars</a></li>
+              <li>
+                <a href="#planet-jupiter" onclick="toggleMenu()">Jupiter</a>
+              </li>
+              <li>
+                <a href="#planet-saturn" onclick="toggleMenu()">Saturn</a>
+              </li>
+              <li>
+                <a href="#planet-uranus" onclick="toggleMenu()">Uranus</a>
+              </li>
+              <li>
+                <a href="#planet-neptune" onclick="toggleMenu()">Neptune</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="home">
-        <!-- <div class="section-pic-container">       
-            <img 
-                src="https://dummyimage.com/600x400/000/fff" 
-                alt="Dummy image"
-                class="icon"
-                >
+      <div class="section-pic-container">
+        <div class="text" onclick="handleClick()">
+          <!-- Add onclick event -->
+          <p>Click Me</p>
+          <!-- Button text -->
         </div>
-        <div class="text">
-            <p>sdasdsaf</p> -->
-        </div>
+      </div>
     </section>
-    <section id="profile">
-
-    </section>
-    <section id="planets">
-
-    </section>
-</body>
+    <section id="profile"></section>
+    <section id="planets"></section>
+  </body>
 </html>

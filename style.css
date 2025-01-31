@@ -36,7 +36,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
 }
 
 ul.nav-links {
@@ -60,6 +60,7 @@ ul.nav-links {
     font-size: 1.2rem;
     padding: 0.6rem 0;
     text-decoration: none;
+    z-index: 102;
   }
 }
 
@@ -111,47 +112,56 @@ a {
   background-color: white;
   width: fit-content;
   max-height: 0;
+  overflow: hidden;
   transform: all 0.3 ease-in-out;
   list-style-type: none;
+  z-index: 102;
 
   > li {
     position: relative;
-  }
 
-  > li > a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-  }
-  a {
-    display: block;
-    padding: 0.6rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transform: all 0.3 ease-in-out;
-    background-color: brown;
-  }
-  li > ul {
-    display: none;
-    list-style: none;
-    position: relative;
-    width: 100%;
-  }
-  li:hover > ul {
-    display: block;
-    position: absolute;
-    padding: 0.6rem 0;
-    text-decoration: none;
-    font-size: 2rem;
-    background-color: aqua;
+    /* Main links */
     a {
-      justify-content: center;
+      display: block;
+      padding: 0.6rem;
+      text-align: center;
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+      transform: all 0.3 ease-in-out;
+      background-color: brown;
+
+      &:hover {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: rgb(181, 181, 181);
+        z-index: 102;
+      }
+    }
+
+    /* Submenu below a main link */
+    > ul {
+      display: none;
+      list-style: none;
       position: relative;
-      font-size: 1rem;
-      background-color: red;
+      width: 100%;
+    }
+
+    &:hover > ul {
+      display: block;
+      position: relative;
+      padding: 0.6rem 0;
+      text-decoration: none;
+      font-size: 2rem;
+      background-color: aqua;
+
+      a {
+        justify-content: center;
+        position: relative;
+        font-size: 1rem;
+        background-color: red;
+      }
     }
   }
 }
@@ -182,4 +192,46 @@ a {
 
 .hamburger-icon span:last-child {
   transform: none;
+}
+
+/* HOMEPAGE */
+
+.section-pic-container {
+  background-image: url(/Space-Website/assets/Homeimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.text {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: 3px solid rgb(187, 187, 187);
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255);
+    border: none;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.8rem;
+    color: rgb(27, 27, 27);
+  }
 }

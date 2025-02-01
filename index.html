@@ -9,9 +9,14 @@
   </head>
   <body>
     <script src="script.js"></script>
-    <nav id="desktop-nav">
+    <nav>
       <div class="title">Space Website</div>
-      <div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -19,7 +24,7 @@
           <li>
             <a href="#planets">Planets</a>
             <!-- Make this a dropdown menu that links to the pages of each planet -->
-            <ul>
+            <ul class="submenu">
               <li><a href="#planet-merucry">Mercury</a></li>
               <li><a href="#planet-venus">Venus</a></li>
               <li><a href="#planet-earth">Earth</a></li>
@@ -28,44 +33,6 @@
               <li><a href="#planet-saturn">Saturn</a></li>
               <li><a href="#planet-uranus">Uranus</a></li>
               <li><a href="#planet-neptune">Neptune</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="title">Space Website</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li>
-            <a href="#planets" onclick="toggleMenu()">Planets</a>
-            <!-- Make this a dropdown menu that links to the pages of each planet -->
-            <ul>
-              <li>
-                <a href="#planet-merucry" onclick="toggleMenu()">Mercury</a>
-              </li>
-              <li><a href="#planet-venus" onclick="toggleMenu()">Venus</a></li>
-              <li><a href="#planet-earth" onclick="toggleMenu()">Earth</a></li>
-              <li><a href="#planet-mars" onclick="toggleMenu()">Mars</a></li>
-              <li>
-                <a href="#planet-jupiter" onclick="toggleMenu()">Jupiter</a>
-              </li>
-              <li>
-                <a href="#planet-saturn" onclick="toggleMenu()">Saturn</a>
-              </li>
-              <li>
-                <a href="#planet-uranus" onclick="toggleMenu()">Uranus</a>
-              </li>
-              <li>
-                <a href="#planet-neptune" onclick="toggleMenu()">Neptune</a>
-              </li>
             </ul>
           </li>
         </ul>
